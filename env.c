@@ -23,7 +23,7 @@ int main()
 
     while (1)
     {
-        printf("$ ");
+        printf("cisfun$ ");
         fflush(stdout);
 
         if (fgets(cmd, MAX_COMMAND_LENGTH, stdin) == NULL)
