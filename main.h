@@ -12,6 +12,7 @@
 #include <signal.h>
 #include <limits.h>
 #include <string.h>
+#include <ctype.h>
 
 #define BUFSIZE 1024
 #define TOK_BUFSIZE 128
@@ -103,7 +104,6 @@ void _memcpy(void *newptr, const void *ptr, unsigned int size);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 char **_reallocdp(char **ptr, unsigned int old_size, unsigned int new_size);
 int cmp_chars(char str[], const char *delim);
-int _isdigit(const char *s);
 void reverse_string(char *s);
 int repeated_char(char *input, int i);
 int error_sep_op(char *input, int i, char last);
