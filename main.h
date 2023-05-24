@@ -157,14 +157,5 @@ char *error_permission(char **args);
 char *error_path_126(data_shell *datash);
 int get_error(data_shell *datash, int eval);
 void get_sigint(int sig);
-void aux_help_env(void);
-void aux_help_setenv(void);
-void aux_help_unsetenv(void);
-void aux_help_general(void);
-void aux_help_exit(void);
-void aux_help(void);
-void aux_help_alias(void);
-void aux_help_cd(void);
-int get_help(data_shell *datash);
 
 #endif
