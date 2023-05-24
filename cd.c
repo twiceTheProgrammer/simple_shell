@@ -28,14 +28,14 @@ void cd_dot(data_shell *datash)
 		return;
 	}
 	cp_strtok_pwd = cp_pwd;
-	rev_string(cp_strtok_pwd);
+	reverse_string(cp_strtok_pwd);
 	cp_strtok_pwd = _strtok(cp_strtok_pwd, "/");
 	if (cp_strtok_pwd != NULL)
 	{
 		cp_strtok_pwd = _strtok(NULL, "\0");
 
 		if (cp_strtok_pwd != NULL)
-			rev_string(cp_strtok_pwd);
+			reverse_string(cp_strtok_pwd);
 	}
 	if (cp_strtok_pwd != NULL)
 	{
@@ -116,7 +116,7 @@ void cd_previous(data_shell *datash)
 
 	p_pwd = _getenv("PWD", datash->_environ);
 
-	write(STDOUT_FILENO, p_pwd, _strlen(p_pwd));
+	write(STDOUT_FILENO, p_pwd, strlen(p_pwd));
 	write(STDOUT_FILENO, "\n", 1);
 
 	free(cp_pwd);
