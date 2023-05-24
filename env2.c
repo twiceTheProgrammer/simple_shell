@@ -41,7 +41,7 @@ void set_env(char *name, char *value, data_shell *datash)
 	for (i = 0; datash->_environ[i]; i++)
 	{
 		var_env = strdup(datash->_environ[i]);
-		name_env = _strtok(var_env, "=");
+		name_env = strtok(var_env, "=");
 		if (strcmp(name_env, name) == 0)
 		{
 			free(datash->_environ[i]);
@@ -100,7 +100,7 @@ int _unsetenv(data_shell *datash)
 	for (i = 0; datash->_environ[i]; i++)
 	{
 		var_env = strdup(datash->_environ[i]);
-		name_env = _strtok(var_env, "=");
+		name_env = strtok(var_env, "=");
 		if (strcmp(name_env, datash->args[1]) == 0)
 		{
 			k = i;

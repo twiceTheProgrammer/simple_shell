@@ -40,7 +40,7 @@ char *_which(char *cmd, char **_environ)
 	{
 		ptr_path = strdup(path);
 		len_cmd = strlen(cmd);
-		token_path = _strtok(ptr_path, ":");
+		token_path = strtok(ptr_path, ":");
 		i = 0;
 		while (token_path != NULL)
 		{
@@ -59,7 +59,7 @@ char *_which(char *cmd, char **_environ)
 				return (dir);
 			}
 			free(dir);
-			token_path = _strtok(NULL, ":");
+			token_path = strtok(NULL, ":");
 		}
 		free(ptr_path);
 		if (stat(cmd, &st) == 0)
