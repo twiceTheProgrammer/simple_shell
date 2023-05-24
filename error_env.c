@@ -32,6 +32,5 @@ char *error_env(data_shell *datash)
 	strcat(error, msg);
 	strcat(error, "\0");
 	free(ver_str);
-
 	return (error);
 }
