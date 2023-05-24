@@ -22,16 +22,16 @@ int get_error(data_shell *datash, int eval)
 		error = error_not_found(datash);
 		break;
 	case 2:
-		if (_strcmp("exit", datash->args[0]) == 0)
+		if (strcmp("exit", datash->args[0]) == 0)
 			error = error_exit_shell(datash);
-		else if (_strcmp("cd", datash->args[0]) == 0)
+		else if (strcmp("cd", datash->args[0]) == 0)
 			error = error_get_cd(datash);
 		break;
 	}
 
 	if (error)
 	{
-		write(STDERR_FILENO, error, _strlen(error));
+		write(STDERR_FILENO, error, strlen(error));
 		free(error);
 	}
 
