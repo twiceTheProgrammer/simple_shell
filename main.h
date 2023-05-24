@@ -152,5 +152,6 @@ char *error_env(shell *datash);
 char *error_path_126(shell *datash);
 int get_error(shell *datash, int eval);
 void get_sigint(int sig);
+void reverse_string(char *s);
 
 #endif

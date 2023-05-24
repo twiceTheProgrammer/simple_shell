@@ -6,6 +6,7 @@
  * @datash: data structure
  * Return: no return
  */
+
 void free_data(shell *datash)
 {
 	unsigned int i;
@@ -26,6 +27,7 @@ void free_data(shell *datash)
  * @av: argument vector
  * Return: no return
  */
+
 void set_data(shell *datash, char **av)
 {
 	unsigned int i;
@@ -58,6 +60,7 @@ void set_data(shell *datash, char **av)
  *
  * Return: 0 on success.
  */
+
 int main(int ac, char **av)
 {
 	shell datash;
@@ -65,7 +68,7 @@ int main(int ac, char **av)
 
 	signal(SIGINT, get_sigint);
 	set_data(&datash, av);
-	shell_loop(&datash);
+	shell_prompt(&datash);
 	free_data(&datash);
 	if (datash.status < 0)
 		return (255);
