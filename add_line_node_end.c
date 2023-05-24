@@ -15,9 +15,9 @@ line_list *add_line_node_end(line_list **head, char *line)
 
 	new->line = line;
 	new->next = NULL;
-	temp = *head;
+	tmp = *head;
 
-	if (temp == NULL)
+	if (tmp == NULL)
 	{
 		*head = new;
 	}

@@ -2,7 +2,7 @@
 
 /**
  * free_line_list - frees a line
- * @head: head of the linked list.
+ * @head: pointer.
  * Return: no return.
  */
 
