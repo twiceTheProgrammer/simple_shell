@@ -6,7 +6,7 @@
  *
  * Return: Error message
  */
-char *error_exit_shell(data_shell *datash)
+char *error_exit_shell(shell *datash)
 {
 	int length;
 	char *error;

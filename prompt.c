@@ -7,7 +7,7 @@
  * Return: void.
  */
 
-void shell_prompt(data_shell *datash)
+void shell_prompt(shell *datash)
 {
 	int loop, i_eof;
 	char *input;

@@ -5,7 +5,7 @@
  * @datash: data relevant (counter, arguments)
  * Return: Error message
  */
-char *error_not_found(data_shell *datash)
+char *error_not_found(shell *datash)
 {
 	int length;
 	char *error;

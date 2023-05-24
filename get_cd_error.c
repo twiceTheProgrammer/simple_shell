@@ -4,7 +4,7 @@
  * @datash: data relevant (directory)
  * Return: Error message
  */
-char *error_get_cd(data_shell *datash)
+char *error_get_cd(shell *datash)
 {
 	int length, len_id;
 	char *error, *ver_str, *msg;

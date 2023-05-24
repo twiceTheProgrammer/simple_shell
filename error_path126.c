@@ -6,7 +6,7 @@
  *
  * Return: The error string.
  */
-char *error_path_126(data_shell *datash)
+char *error_path_126(shell *datash)
 {
 	int length;
 	char *ver_str;
